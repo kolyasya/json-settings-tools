@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5",                       
+    "lib": ["ESNext"],                         /* Specify library files to be included in the compilation. */               /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
+    "declaration": true,    
+    "sourceMap": false,    
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",              /* Generates corresponding '.d.ts' file. */
+    "rootDir": "src",
+    "outDir": "lib",
+    "typeRoots": ["node_modules/@types"],
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true,                        /* Redirect output structure to the directory. */
+    "allowSyntheticDefaultImports": true,     /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
+    "esModuleInterop": true
+  },
+
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

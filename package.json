@@ -1,0 +1,38 @@
+{
+  "name": "json-settings-tools",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "jst": "./lib/index.js"
+  },
+  "files": [
+    "/lib",
+    "yarn.lock",
+    "README.md"
+  ],
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/ink-spinner": "^2.0.3",
+    "@types/ink-text-input": "^2.0.1",
+    "@types/lodash": "^4.14.166",
+    "@types/node": "^13.5.3",
+    "@types/react": "^16.9.17",
+    "@types/request-promise": "^4.1.45",
+    "@types/rimraf": "^2.0.3",
+    "tslint": "^6.1.1",
+    "tslint-config-airbnb": "5.11.1",
+    "tslint-config-prettier": "1.18.0"
+  },
+  "keywords": [],
+  
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "arg": "^5.0.0",
+    "chalk": "^4.1.0",
+    "lodash": "^4.17.20"
+  }
+}
