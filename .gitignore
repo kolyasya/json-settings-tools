@@ -2,3 +2,6 @@ node_modules
 main.json
 locally.json
 lib
+.idea
+src/.DS_Store
+.DS_Store

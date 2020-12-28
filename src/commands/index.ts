@@ -2,6 +2,7 @@ import { Flags } from '../index';
 
 import sort from './sort';
 import check from './check';
+import help from './help';
 import log from '../helpers/log';
 
 export class Result {
@@ -45,27 +46,29 @@ interface CommandExecutorConfig {
 }
 
 export class CommandExecutor implements ICommandExecutor {
-  private handler;
-  private condition;
-  private name;
+  private readonly handler: CommandHandler;
+  private readonly condition?: CommandCondition;
+  private readonly name: string;
+
   constructor(config: CommandExecutorConfig) {
     this.handler = config.handler;
     this.condition = config.condition;
     this.name = config.name;
   }
 
-  run(args: string[], flags: Flags) {
+  async run(args: string[], flags: Flags) {
     const { passed, message = '' } = this.condition ? this.condition(args, flags) : { passed: true };
     if (passed) {
-      return this.handler(args, flags);
+      return await this.handler(args, flags);
     } else {
       log.error(message || `Command '${this.name}' - failed`);
-      return null;
+      return Result.error(message);
     }
   }
 }
 
 export {
   sort,
-  check
+  check,
+  help
 };

@@ -14,4 +14,5 @@ Also, you can sort your settings file alphabetically.
   - `--target/-t <path_to_target_settings.json>` (sort, check) - path to settings file to check and validate.
   - `--output/-o <path>` (sort) - path to save `--target/-t` after sorting.
   - `--silent/-s` (sort/check) - option to disable all output to the console. The process just will be exited if the settings are not valid.
-  - `--except/-e "key1, key2, key3"` (sort) - keys which should be excepted sorting, will be in provided order and placed to the start of sorted settings.
+  - `--except/-e "key1, key2, key3"` (sort) - keys which should be excepted sorting, will be in provided order and placed to the start of sorted settings.- `--except/-e "key1, key2, key3"` (sort) - keys which should be excepted sorting, will be in provided order and placed to the start of sorted settings.
+  - `--help` - get help for commands.
