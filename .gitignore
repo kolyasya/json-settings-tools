@@ -5,3 +5,4 @@ lib
 .idea
 src/.DS_Store
 .DS_Store
+*.json
