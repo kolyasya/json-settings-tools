@@ -17,15 +17,11 @@ const sortMethod = async (target: any, flags: Flags): Promise<Result>  => {
   }
 
   const flattenedTarget = flatObject(parseResult.data);
-  const sortedTarget = sortObjectByKeys(flattenedTarget);
+  const sortedTarget = sortObjectByKeys(flattenedTarget, exceptKeys);
   
   const deflattenedTarget = deflatObject(sortedTarget);
 
-  let resultTarget = deflattenedTarget;
-
-  if (exceptKeys) {
-    resultTarget = exceptObjectKeys(deflattenedTarget, exceptKeys);
-  }
+  const resultTarget = deflattenedTarget;
 
   const targetJson = JSON.stringify(resultTarget, null, 2);
 
