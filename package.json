@@ -1,6 +1,6 @@
 {
   "name": "json-settings-tools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "bin": {
     "jst": "./lib/index.js"
