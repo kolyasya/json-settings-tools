@@ -19,7 +19,7 @@
     }
   },
   "bin": {
-    "xlsx-to-i18n-converter": "./dist/index.js"
+    "json-settings-tools": "./dist/index.js"
   },
   "scripts": {
     "watch": "parcel watch",
